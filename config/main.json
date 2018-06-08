@@ -1,0 +1,10 @@
+{
+    "environment": "development",
+    "log": {
+        "path": "\/var\/log\/mercadolibre\/xmen_dna\/",
+        "name": "logs"
+    },
+    "emailsConst": {
+        "subjectPrefix": "Mercado Libre | XMen DNA - "
+    }
+}

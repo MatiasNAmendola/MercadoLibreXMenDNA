@@ -1,0 +1,27 @@
+{
+    "settings": {
+        "displayErrorDetails": false
+    },
+    "dsn": {
+        "host": "localhost",
+        "port": 3306,
+        "database": "xmendna",
+        "user": "root",
+        "password": "root"
+    },
+    "redis_conf": {
+        "use": false,
+        "slave": {
+            "host": "127.0.0.1",
+            "port": 6379
+        },
+        "master": {
+            "host": "172.19.0.99",
+            "port": 6379
+        }
+    },
+    "emails": {
+        "sender": "no-reply@mercadolibre.com",
+        "connError": "soporte.esolutions@gmail.com"
+    }
+}
