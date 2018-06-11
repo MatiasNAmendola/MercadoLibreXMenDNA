@@ -11,7 +11,7 @@ const router = require('./router');
 // Code to run if we're in the master process
 if (cluster.isMaster) {
 
-  console.log(`Running in: ${process.env.NODE_ENV}`);
+  console.log(`Running in: ${process.argv[2] || process.env.NODE_ENV}`);
 
   // Count the machine's CPUs
   const cpuCount = require('os').cpus().length;

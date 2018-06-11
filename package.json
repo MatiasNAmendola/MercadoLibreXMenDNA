@@ -4,7 +4,7 @@
   "description": "Mercado Libre | X Men DNA",
   "private": true,
   "scripts": {
-    "start": "node app.js",
+    "start": "node app.js production",
     "test": "mocha index.test.js",
     "coverage": "istanbul cover _mocha index.test.js"
   },
