@@ -2,7 +2,7 @@
 /* global __dirname */
 /* jshint ignore:start */
 const mysql = require('mysql2/promise'),
-        Redis = require('ioredis');
+    Redis = require('ioredis');
 
 /**
  * Clase de manejo de conexiones.
@@ -33,6 +33,7 @@ class Connections {
             port: 6379,
             family: 4, // 4 (IPv4) or 6 (IPv6)
             db: 0,
+            password: '',
             showFriendlyErrorStack: false,
             retryStrategy: () => {
                 return false;
@@ -40,17 +41,15 @@ class Connections {
         };
 
         let redis_conf = this.conf.redis_conf;
-        
-        if (redis_conf.use === false) {
-            return null;
-        }
 
         if (isSlave === true) {
             conn.host = redis_conf.slave.host || conn.host;
             conn.port = redis_conf.slave.port || conn.port;
+            conn.password = redis_conf.slave.password || conn.password;
         } else {
             conn.host = redis_conf.master.host || conn.host;
             conn.port = redis_conf.master.port || conn.port;
+            conn.password = redis_conf.master.password || conn.password;
         }
 
         let redis = new Redis(conn);

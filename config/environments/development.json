@@ -10,7 +10,6 @@
         "password": "root"
     },
     "redis_conf": {
-        "use": false,
         "slave": {
             "host": "127.0.0.1",
             "port": 6379

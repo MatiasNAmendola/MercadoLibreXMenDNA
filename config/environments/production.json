@@ -10,14 +10,15 @@
         "password": "1Xmenmercadolibre"
     },
     "redis_conf": {
-        "use": false,
         "slave": {
-            "host": "127.0.0.1",
-            "port": 6379
+            "host": "mercadolibrexmen.redis.cache.windows.net",
+            "port": 6379,
+            "password": "aaXNt6GBbf97Cip53U6LIszn5P2mgwojdYnGuZ8TJqA="
         },
         "master": {
-            "host": "172.19.0.99",
-            "port": 6379
+            "host": "mercadolibrexmen.redis.cache.windows.net",
+            "port": 6379,
+            "password": "5JO7FYdD8U3dhLb5NfywMujjmkRVqbqE6SosxX95uhk="
         }
     },
     "emails": {
