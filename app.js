@@ -54,8 +54,10 @@ if (cluster.isMaster) {
     });
   });
 
+  const port = process.env.PORT || 1337;
+
   // Bind to a port
-  app.listen(80, function () {
+  app.listen(port, function () {
     console.log('Worker %d listening on port %d!', cluster.worker.id, 3000);
   });
 }

@@ -7,7 +7,7 @@ chai.config.includeStack = true;
 var expect = chai.expect;
 var request = require('request');
 
-const PORT = 80;
+const PORT = process.env.PORT || 1337;
 const URL = `http://localhost:${PORT}`;
 
 before(function () {
