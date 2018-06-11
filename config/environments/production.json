@@ -3,11 +3,11 @@
         "displayErrorDetails": false
     },
     "dsn": {
-        "host": "localhost",
+        "host": "mercadolibrexmen-mysqldbserver.mysql.database.azure.com",
         "port": 3306,
-        "database": "xmendna",
-        "user": "root",
-        "password": "root"
+        "database": "mercadolibrexmen51334",
+        "user": "mercadolibrexmen@mercadolibrexmen-mysqldbserver",
+        "password": "1Xmenmercadolibre"
     },
     "redis_conf": {
         "use": false,
