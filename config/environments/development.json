@@ -6,8 +6,8 @@
         "host": "localhost",
         "port": 3306,
         "database": "xmendna",
-        "user": "root",
-        "password": "root"
+        "user": "admin",
+        "password": "admin"
     },
     "redis_conf": {
         "slave": {
