@@ -56,7 +56,7 @@ echo "Instalamos 'mysql'..."
 apt-get install mysql-server
 ```
 
-Tendremos que crear el usuario de MySQL 'root' con clave 'root'
+Tendremos que crear el usuario de MySQL 'admin' con clave 'admin'
 
 ```console
 mysql -u root -p
