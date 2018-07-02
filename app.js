@@ -58,6 +58,6 @@ if (cluster.isMaster) {
 
   // Bind to a port
   app.listen(port, function () {
-    console.log('Worker %d listening on port %d!', cluster.worker.id, 3000);
+    console.log('Worker %d listening on port %d!', cluster.worker.id, port);
   });
 }

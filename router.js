@@ -111,7 +111,7 @@ router.get('/stats', async (req, res) => {
 
             const [rows] = await database.execute('SELECT COUNT(1) `total`, sum(mutant = 0) `humans`, sum(mutant = 1) `mutants` FROM `dnas`;');
             redisMaster.hmset('STATS', rows[0]);
-            result = rows;
+            result = rows[0];
         }
         
         res.status(200).json({count_mutant_dna: parseInt(result.mutants), count_human_dna: parseInt(result.humans), ratio:parseInt(result.mutants) / parseInt(result.total)});

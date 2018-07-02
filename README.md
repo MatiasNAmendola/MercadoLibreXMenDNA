@@ -99,6 +99,12 @@ Para iniciar el servicio:
 npm start
 ```
 
+Para iniciar el servicio en el ambiente de desarrollo:
+
+```console
+node . development
+```
+
 Para obtener Test-Automáticos, Code coverage:
 
 ```console

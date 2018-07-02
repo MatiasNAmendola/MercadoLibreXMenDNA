@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Mercado Libre | X Men DNA",
   "private": true,
+  "main": "app.js",
   "scripts": {
     "start": "node app.js production",
     "test": "mocha index.test.js",
